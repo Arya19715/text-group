@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Like Website by FreeCodeBox </title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- For Navabr Left & Right Started-->
+    <nav>
+        <div class="nav-left">
+            <img src="images/" alt="For-Logo" class="logo">
+            <!-- For more Icons -->
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="Search-icon">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/marie.jpg">
+                <!-- <img src="images/uploads.jpg" alt=""> -->
+            </div>
+        </div>
+        <!-- ---------------Setting-Menu-------------------------- -->
+        <div class="settings-menu">
+
+           <div id="dark-btn">
+            <span></span>
+           </div>
+
+
+            <div class="setting-menu-inner">
+
+                <div class="user-profile">
+                    <img src="images/marie.jpg">
+                    <div>
+                        <p>Marie Rose Nedamo</p>
+                        <!-- <small>Public<ion-icon name="caret-down-outline"></ion-icon></small> -->
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give feedback</p>
+                        <!-- <small>Public<ion-icon name="caret-down-outline"></ion-icon></small> -->
+                        <a href="#">Help us to omprove the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="#">Setting & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- For Navabr Left & Right Ended-->
+
+    <!-- For sidebar & left Right Started-->
+
+    <!-- -------------Left-SideBar----------------- -->
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="For-news-link">Home</a>
+                <a href="#"><img src="images/friends.png" alt="For-news-link">Popular</a>
+              
+            </div>
+            <div class="shortcut-links">
+                <p>Your Previous</p>
+                <a href="#marie"><img src="images/marie.jpg">Marie</a>
+                <a href="#lee"><img src="images/lee2.jpg">Lee</a>
+                <a href="#Vincent"><img src="images/vcn.jpg">Vincent</a>
+                <!-- <a href="#"><img src="images/shortcut-4.png">Web FreeCodeBox</a> -->
+            </div>
+        </div>
+
+        <!-- -------------Main-SideBar----------------- -->
+
+        <div class="main-content">
+            <h1 class="eht">Popular</h1>
+            <br>
+            <div class="story-gallery">
+                <div class="story story1">
+                    <p>Harvey</p>
+                </div>
+
+                <div class="story story2">
+                    <p>Aliha</p>
+                </div>
+
+                <div class="story story3">
+                    <p>Ali</p>
+                </div>
+
+                <div class="story story4">
+                    <p>Alisha</p>
+                </div>
+
+                <div class="story story5">
+                    <p>Rajput</p>
+                </div>
+            </div>
+
+            <div class="post-container" id="marie">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/marie.jpg" alt="">
+
+                        <div>
+                            <p>Marie Rose</p>
+                            <span><ion-icon name="time-outline"></ion-icon>2 hours ago </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Online Quiz Muna mga ka beshie<br> <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw"><br>#2024Trend</a>
+                    <a href="#">#MarisRacal</a>
+                    <a href="#">#butilltouchmyselfnalang</a>
+                </p>
+                <img src="images/quiz.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <a href="#" class="icon-container like-button">
+                          <i class="fas fa-heart"></i> <span id="likeCount">130</span>
+                        </a>
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-comment"></i> 70
+                        </a>
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-share"></i> 95
+                        </a>
+                      </div>
+                    <div class="post-profile-icon">
+                        <img src="images/marie.jpg"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd Part" -->
+
+            <div class="post-container" id="marie">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/marie.jpg" alt="">
+
+                        <div>
+                            <p>Marie Rose</p>
+                            <span><ion-icon name="time-outline"></ion-icon>2 hours ago </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Online Quiz Muna mga ka beshie<br> <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw"><br>#2024Trend</a>
+                    <a href="#">#MarisRacal</a>
+                    <a href="#">#butilltouchmyselfnalang</a>
+                </p>
+                <img src="images/quiz.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-heart"></i> 130
+                        </a>
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-comment"></i> 70
+                        </a>
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-share"></i> 95
+                        </a>
+                      </div>
+                    <div class="post-profile-icon">
+                        <img src="images/marie.jpg"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- 3RD PART -->
+
+            <div class="post-container" id="marie">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/marie.jpg" alt="">
+
+                        <div>
+                            <p>Marie Rose</p>
+                            <span><ion-icon name="time-outline"></ion-icon>2 hours ago </span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Online Quiz Muna mga ka beshie<br> <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw"><br>#2024Trend</a>
+                    <a href="#">#MarisRacal</a>
+                    <a href="#">#butilltouchmyselfnalang</a>
+                </p>
+                <img src="images/quiz.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <a href="#" class="icon-container like-button">
+                          <i class="fas fa-heart"></i> 130
+                        </a>
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-comment"></i> 70
+                        </a>
+                        <a href="#" class="icon-container">
+                          <i class="fas fa-share"></i> 95
+                        </a>
+                      </div>
+                      
+                    <div class="post-profile-icon">
+                        <img src="images/marie.jpg"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4Th Part -->
+
+            <!-- <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/eve.jpg" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems. <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/tol.jpg" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 5130</div>
+                        <div><img src="images/comments.png"> 270</div>
+                        <div><img src="images/share.png"> 295</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/eve.jpg"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+             5th part 
+
+            <div class="post-container">
+
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="">
+
+                        <div>
+                            <p>Ali Haider Rajput</p>
+                            <span><ion-icon name="time-outline"></ion-icon>May 06 2024, 12:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><ion-icon name="ellipsis-vertical-outline"></ion-icon></a>
+
+                </div>
+
+
+                <p class="post-text">Subscribe <span> @freecodebox </span>Youtube Channel to watch more videos on
+                    Website/Web Development and UI design also Other development and tech problems. <a
+                        href="https://www.youtube.com/channel/UCbUpOrtvAtssl2M21R8GZlw">#freecodebox</a>
+                    <a href="#">#YoutubeChannel</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 1130</div>
+                        <div><img src="images/comments.png"> 270</div>
+                        <div><img src="images/share.png"> 395</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><ion-icon name="caret-down-outline"></ion-icon>
+                    </div>
+                </div>
+            </div> -->
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+
+
+
+        <!-- -------------Right-SideBar----------------- -->
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>25</h3>
+                    <span>November</span>
+                </div>
+                <div class="right-event">
+                    <h4>Carcar Fiesta</h4>
+                    <p><ion-icon name="location-outline"></ion-icon>Carcar City Market</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>3</h3>
+                    <span>December</span>
+                </div>
+                <div class="right-event">
+                    <h4>Christmas Tree Opening</h4>
+                    <p><ion-icon name="location-outline"></ion-icon>Fuente Osmena   </p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+
+            <img src="images/christmas.jpg" class="sidebar-adds">
+
+            <!-- <div class="sidebar-title">
+                <h4>Converstion</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="online-member">
+                </div>
+                <p>Alisha Rajput</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="online-member">
+                </div>
+                <p>Ali Rajput</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="online-member">
+                </div>
+                <p>Aliha Rajput</p>
+            </div> -->
+        </div>
+
+
+
+    </div>
+
+
+    <!-- For sidebar left & Right Ended-->
+
+    <!-- Footer Started -->
+
+    <div class="footer">
+        <p>Copyright 2024 - freecodebox Youtube Channel</p>
+    </div>
+
+
+
+
+
+
+
+    <!-- Origional Javascript for Login Page -->
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
